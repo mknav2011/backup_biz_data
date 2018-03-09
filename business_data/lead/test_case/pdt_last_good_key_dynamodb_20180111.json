@@ -1,0 +1,78 @@
+{
+  "created": {
+    "N": "1520295519255"
+  },
+  "key": {
+    "S": "leads.edw.pdt.lead_transactional_fact$LastGoodKey"
+  },
+  "value": {
+    "M": {
+      "destination_partitions": {
+        "L": [
+          {
+            "M": {
+              "id": {
+                "S": "leads.edw.pdt.lead_transactional_fact"
+              },
+              "partition": {
+                "M": {
+                  "day": {
+                    "N": "11"
+                  },
+                  "month": {
+                    "N": "1"
+                  },
+                  "year": {
+                    "N": "2018"
+                  }
+                }
+              },
+              "partition_meta": {
+                "M": {}
+              }
+            }
+          }
+        ]
+      },
+      "end_runtime": {
+        "S": "2018-03-04 02:43:35.562659"
+      },
+      "meta_info": {
+        "M": {}
+      },
+      "source_partitions": {
+        "L": [
+          {
+            "M": {
+              "id": {
+                "S": "leads.edw.rd.default"
+              },
+              "partition": {
+                "M": {
+                  "day": {
+                    "N": "11"
+                  },
+                  "hour": {
+                    "N": "10"
+                  },
+                  "month": {
+                    "N": "1"
+                  },
+                  "year": {
+                    "N": "2018"
+                  }
+                }
+              },
+              "partition_meta": {
+                "M": {}
+              }
+            }
+          }
+        ]
+      },
+      "start_runtime": {
+        "S": "2018-03-04 02:15:45.467464"
+      }
+    }
+  }
+}

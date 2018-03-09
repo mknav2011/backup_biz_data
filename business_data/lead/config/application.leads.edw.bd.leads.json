@@ -1,0 +1,10 @@
+{
+  "key": {
+    "S": "configuration"
+  },
+  "namespace": {
+    "S": "application.leads.edw.bd.leads"
+  },
+  "value": {
+    "S":"{\"job_name\":\"leads_edw\",\"script_path\":\"s3://move-dataeng-code-$env/business-data/lead_generic_data_refresh.py\",\"sql_path\":[\"s3://move-dataeng-code-$env/business-data/sql/leads_bd_drop_external_table.sql\",\"s3://move-dataeng-code-$env/business-data/sql/leads_bd_create_external_table.sql\",\"s3://move-dataeng-code-$env/business-data/sql/leads_business_dedupe.sql\"],\"s3_target_path\":\"s3://move-dataeng-leads-$env/edw/business-data/leads/\",\"source_partition_by_column\": [\"year\", \"month\", \"day\"],\"target_partition_by_column\":[\"mst_submit_date\"],\"is_snapshot\":\"n\",\"is_hive_dynamic_partition\":\"y\",\"is_full_refresh\":\"n\",\"partition_batch_size\":2,\"glue_dpu_instance_count\":5,\"source\": [{\"app_id\": \"leads.edw.pdt.lead_transactional_fact\",\"is_partitioned\": true,\"partition_by\": [\"year\", \"month\", \"day\"],\"get_all_completed_partitions\": \"\",\"s3_source_path\": \"s3://move-dataeng-leads-prod/edw/processed-data-xact/lead_transactional_fact/\",\"source_file_type_parquet_or_text\":\"parquet\",\"temp_table_name\":\"lead_transactional_fact\"}],\"lock_period_hours\": 4}"}
+}

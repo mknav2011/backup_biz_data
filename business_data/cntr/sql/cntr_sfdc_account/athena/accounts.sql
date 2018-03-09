@@ -1,0 +1,66 @@
+CREATE EXTERNAL TABLE `biz_data.accounts`(
+  `account_id` string,
+  `account_name` string,
+  `account_number` string,
+  `account_owner_id` string,
+  `account_sub_type` string,
+  `account_type` string,
+  `alerts` string,
+  `associated_agent_account_id` string,
+  `billing_customer_id` string,
+  `cdh_party_id` string,
+  `created_by` string,
+  `created_date` timestamp,
+  `credit_risk` string,
+  `credit_status` string,
+  `display_name` string,
+  `division` string,
+  `franchise_type` string,
+  `grand_parent_account_id` string,
+  `last_modified_date` timestamp,
+  `lock_expiration_date` string,
+  `mls_set_id` string,
+  `next_renewal_date` string,
+  `own_co_broke` string,
+  `own_coshow` string,
+  `own_cycle` string,
+  `own_fac` string,
+  `own_fcma` string,
+  `own_fh` string,
+  `own_fh_broke` string,
+  `own_idx` string,
+  `own_lh` string,
+  `own_ms` string,
+  `own_osl` string,
+  `own_osr` string,
+  `own_sle` string,
+  `own_tiger` string,
+  `own_tp_crm` string,
+  `parent_broker` string,
+  `photo_url` string,
+  `price_list` string,
+  `primary_clc` string,
+  `primary_email` string,
+  `primary_hlc` string,
+  `sales_lock` string,
+  `status` string,
+  `status_as_of` string,
+  `systemmodstamp` timestamp,
+  `territories` string,
+  `total_agents` string,
+  `total_clc` string,
+  `total_contract_value` string,
+  `total_hlc` string,
+  `total_offices` string,
+  `website_url` string)
+ROW FORMAT SERDE
+  'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'
+STORED AS INPUTFORMAT
+  'org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat'
+OUTPUTFORMAT
+  'org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat'
+LOCATION
+  's3://move-dataeng-cntr-dev/contracts/businessdata/sfdc_accounts'
+TBLPROPERTIES (
+  'PARQUET.COMPRESS'='SNAPPY',
+  'transient_lastDdlTime'='1519870171')

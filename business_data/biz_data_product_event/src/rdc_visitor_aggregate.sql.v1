@@ -1,0 +1,39 @@
+WITH dataset as(
+SELECT  concat(year,month,day)    as date_mst, 
+post_visid_high || '-' || post_visid_low AS visitor_id, 
+post_visid_high || '-' || post_visid_low||'-'||visit_num as visit_id,
+post_pagename AS pagen,
+post_prop40 as page_type,
+va_closer_id   ,
+va_closer_detail,
+b.name as traffic_source,
+a.mobile_id, c.manufacturer, c.device_type, c.operating_system as mobile_os, 
+post_channel, 
+user_agent, 
+post_prop31 as ldp_propertystatus,
+post_prop32 as srp_propertystatus,
+post_prop67 app_version,  
+post_prop17 as source_application,
+post_prop27 as domain ,
+os as os_id,
+d.name as os_name,  
+hit_source,
+post_page_event, 
+SUM(CASE WHEN post_page_event = '0' THEN 1 ELSE 0 END) AS pageview_count 
+FROM adobe_parity.home_realtor_hit_data  a 
+left outer join   adobe_parity.va_closer b
+on(a.va_closer_id  = cast(b.id as varchar) )
+left outer join adobe_parity.mobile_attributes c
+on(a.mobile_id  = cast(c.mobile_id as varchar) ) 
+left outer join adobe_parity.pdt_operating_systems   d
+  on(a.os = d.id )
+WHERE exclude_hit = '0'  
+AND post_channel not in ('core-ios','core-android','core-windows')
+AND post_mobileappid = ''
+ AND year = '{year}'  
+AND month =  '{month}'
+  AND day =  '{day}' 
+GROUP BY 1,2,3,4,5 , 6, 7, 8, 9, 10, 11, 12,13,14, 15, 16, 17, 18, 19, 20,21,22,23
+)
+select  *
+from dataset 

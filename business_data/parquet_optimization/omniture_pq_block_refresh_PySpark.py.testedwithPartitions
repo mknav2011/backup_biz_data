@@ -1,0 +1,32 @@
+from pyspark import SparkConf, SparkContext
+from pyspark.sql import SQLContext, HiveContext
+import json 
+sc = SparkContext()
+sqlContext = HiveContext(sc)
+
+df_par= sqlContext.read.option("mergeSchema", "true").parquet('s3://move-dataeng-omniture-prod/homerealtor/processed-data-xact/hit_data/year=2017/month=11/day=11/')
+
+df_par.printSchema()
+
+block_size = str(1024 * 1024 * 512)
+sc._jsc.hadoopConfiguration().set("dfs.block.size", block_size)
+sc._jsc.hadoopConfiguration().set("parquet.block.size", block_size)
+
+s3_location_target = 's3://move-dataeng-temp-dev/glue-etl/parquet_block_poc/omtr_pq_block_512_1day_compressed'
+  
+output_folder = s3_location_target # With absolute path
+print 'output_folder= %s' %(output_folder)
+#----  PySpark section ----
+from pyspark.sql.functions import lit
+from pyspark.sql.functions import reverse, split
+df_with_month = df_par.withColumn("month", lit(11))
+codec='snappy'  
+partitionby=['month','hour']
+#df = df_par.filter(df_par.hour <= 13)
+#df.repartition(*partitionby).write.partitionBy("hour").mode('overwrite').parquet(output_folder, compression=codec) 
+df_with_month.repartition(*partitionby).write.partitionBy(["month", "hour"]).mode('overwrite').parquet(output_folder, compression=codec) 
+
+#df_par.write.mode('overwrite').partitionBy("hour").parquet(output_folder) 
+#df_par.write.mode('overwrite').parquet(output_folder)
+print sc._jsc.hadoopConfiguration().get("dfs.block.size")
+print 'Done Parquet Conversion !'

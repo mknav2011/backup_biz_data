@@ -1,0 +1,25 @@
+"key": "configuration",
+"namespace": "application.lstp.edw.bd.properties_year2017_and_older_snapshot",
+"value":
+{
+  "job_name": "bd_properties_year2017_and_older_snapshot",
+  "script_path": "s3://move-dataeng-code-$env/business-data/generic_data_refresh.py",
+  "sql_path": "s3://move-dataeng-code-$env/business-data/lstp/edw/property_dim/sql/property_dim_dedupe_full_refresh_glue_year2017.sql",
+  "s3_target_path": "s3://move-dataeng-lstp-$env/edw/business-data/propertydim/bucket=historical/year=2017",
+  "target_partition_by_column": "None",
+  "is_snapshot": "n",
+  "glue_dpu_instance_count": 40,
+  "block_size_MB": "\\\"\\\"",
+  "source": [
+    {
+      "app_id": "lstp.edw.pdt.property_dim",
+      "is_partitioned": false,
+      "partition_by": [],
+      "get_all_completed_partitions": "",
+      "s3_source_path": "s3://move-dataeng-lstp-$env/edw/processed-data-xact/property_dim",
+      "source_file_type_parquet_or_text": "parquet",
+      "temp_table_name": "lstp_edw_pdt__property_dim"
+    }
+  ],
+  "lock_period_hours": 1
+}

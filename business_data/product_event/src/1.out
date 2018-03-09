@@ -1,0 +1,1492 @@
+
+ENV=$1
++ ENV=dev
+
+function error_exit()
+{
+ret_val=$1
+process_step="${2}"
+log_filename="${3}"
+if [ $ret_val -ne 0 ]
+then
+echo -e "$(date '+%y%m%d %H:%M')\t Script errored at - ${process_step} step..."     ## >>${LOG_FILE}
+exit -1
+fi
+}
+
+pushd `dirname $0` > /dev/null
+dirname $0
+++ dirname ./pe_main_wrapper.sh
++ pushd .
+SCRIPTPATH=`pwd`
+pwd
+++ pwd
++ SCRIPTPATH=/Users/apillai/move-git/business_data/product_event/src
+popd > /dev/null
++ popd
+export BIN_DIR=$SCRIPTPATH
++ export BIN_DIR=/Users/apillai/move-git/business_data/product_event/src
++ BIN_DIR=/Users/apillai/move-git/business_data/product_event/src
+
+SCRIPT_NAME=$(basename $0 .sh)
+basename $0 .sh
+++ basename ./pe_main_wrapper.sh .sh
++ SCRIPT_NAME=pe_main_wrapper
+DATE_STR=`date '+%Y-%m-%d_%H%M%S'`
+date '+%Y-%m-%d_%H%M%S'
+++ date +%Y-%m-%d_%H%M%S
++ DATE_STR=2018-02-06_091038
+LOG_DIR=/tmp
++ LOG_DIR=/tmp
+LOG_FILE=${LOG_DIR}/${SCRIPT_NAME}.${DATE_STR}.out
++ LOG_FILE=/tmp/pe_main_wrapper.2018-02-06_091038.out
+#--- Mobile Attributes ETL
+S3_LOCATION_TGZ=s3://move-dataeng-dropbox-prod/adobe/omniture/mobilelookup
++ S3_LOCATION_TGZ=s3://move-dataeng-dropbox-prod/adobe/omniture/mobilelookup
+S3_LOCATION_PARQUET_FILE=s3://move-dataeng-omniture-${ENV}/homerealtor/lookups_raw/mobile_attributes/
++ S3_LOCATION_PARQUET_FILE=s3://move-dataeng-omniture-dev/homerealtor/lookups_raw/mobile_attributes/
+LOOKUP_FILENAME=mobile_attributes.tsv
++ LOOKUP_FILENAME=mobile_attributes.tsv
+GLUE_SCRIPT_LOCATION=s3://move-dataeng-code-${ENV}/glue-etl/utils/glueetl_extract_lookup_from_tarball.py
++ GLUE_SCRIPT_LOCATION=s3://move-dataeng-code-dev/glue-etl/utils/glueetl_extract_lookup_from_tarball.py
+GLUE_DPU_INSTANCE_COUNT=100
++ GLUE_DPU_INSTANCE_COUNT=100
+time -p python -u $BIN_DIR/rdc_omniture_mobile_attributes_lookup_load_wrapper.py --s3_location_tgz ${S3_LOCATION_TGZ} --s3_location_parquet_file ${S3_LOCATION_PARQUET_FILE} --lookup_filename ${LOOKUP_FILENAME} --glue_script_location ${GLUE_SCRIPT_LOCATION} --glue_dpu_instance_count ${GLUE_DPU_INSTANCE_COUNT}
++ python -u /Users/apillai/move-git/business_data/product_event/src/rdc_omniture_mobile_attributes_lookup_load_wrapper.py --s3_location_tgz s3://move-dataeng-dropbox-prod/adobe/omniture/mobilelookup --s3_location_parquet_file s3://move-dataeng-omniture-dev/homerealtor/lookups_raw/mobile_attributes/ --lookup_filename mobile_attributes.tsv --glue_script_location s3://move-dataeng-code-dev/glue-etl/utils/glueetl_extract_lookup_from_tarball.py --glue_dpu_instance_count 100
+
+===================================== - ======================================
+s3_location_tgz                        = s3://move-dataeng-dropbox-prod/adobe/omniture/mobilelookup
+s3_location_parquet_file               = s3://move-dataeng-omniture-dev/homerealtor/lookups_raw/mobile_attributes/
+lookup_filename                        = mobile_attributes.tsv
+glue_script_location                   = s3://move-dataeng-code-dev/glue-etl/utils/glueetl_extract_lookup_from_tarball.py
+glue_dpu_instance_count                = 100
+
+===================================== - ======================================
+glue_job_name= Homerealtor.Lookupsraw.Mobileattributes.
+2018-02-06 09:10:39,581 Starting Glue Job Homerealtor.Lookupsraw.Mobileattributes.
+2018-02-06 09:10:40,253 Waiting for JobName = Homerealtor.Lookupsraw.Mobileattributes. and 
+ JobId=jr_0b8b9689561a11717ba02bd76ef7d2debf53ff45c9351902e39788abced74079  to Complete processing ...
+2018-02-06 09:10:40,253 LOG LOCATION: https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2#logEventViewer:group=/aws-glue/jobs/output;stream=jr_0b8b9689561a11717ba02bd76ef7d2debf53ff45c9351902e39788abced74079
+2018-02-06 09:10:40,468 RUNNING
+2018-02-06 09:10:50,570 RUNNING
+2018-02-06 09:11:00,663 RUNNING
+2018-02-06 09:11:10,762 RUNNING
+2018-02-06 09:11:21,499 RUNNING
+2018-02-06 09:11:31,593 RUNNING
+2018-02-06 09:11:41,688 RUNNING
+2018-02-06 09:11:51,772 RUNNING
+2018-02-06 09:12:01,848 RUNNING
+2018-02-06 09:12:11,943 RUNNING
+2018-02-06 09:12:22,008 RUNNING
+2018-02-06 09:12:32,092 RUNNING
+2018-02-06 09:12:42,173 RUNNING
+2018-02-06 09:12:52,253 RUNNING
+2018-02-06 09:13:02,351 RUNNING
+2018-02-06 09:13:12,433 RUNNING
+2018-02-06 09:13:22,512 RUNNING
+2018-02-06 09:13:32,603 RUNNING
+2018-02-06 09:13:42,724 RUNNING
+2018-02-06 09:13:52,834 RUNNING
+2018-02-06 09:14:02,919 RUNNING
+2018-02-06 09:14:12,990 RUNNING
+2018-02-06 09:14:23,063 RUNNING
+2018-02-06 09:14:33,162 RUNNING
+2018-02-06 09:14:43,269 RUNNING
+2018-02-06 09:14:53,470 RUNNING
+2018-02-06 09:15:03,550 RUNNING
+2018-02-06 09:15:13,640 RUNNING
+2018-02-06 09:15:23,715 RUNNING
+2018-02-06 09:15:33,790 RUNNING
+2018-02-06 09:15:43,937 RUNNING
+2018-02-06 09:15:54,034 RUNNING
+2018-02-06 09:16:04,105 RUNNING
+2018-02-06 09:16:14,229 RUNNING
+2018-02-06 09:16:24,313 RUNNING
+2018-02-06 09:16:34,415 RUNNING
+2018-02-06 09:16:44,521 RUNNING
+2018-02-06 09:16:54,615 RUNNING
+2018-02-06 09:17:04,695 RUNNING
+2018-02-06 09:17:14,770 RUNNING
+2018-02-06 09:17:24,846 RUNNING
+2018-02-06 09:17:34,931 RUNNING
+2018-02-06 09:17:45,030 RUNNING
+2018-02-06 09:17:55,102 RUNNING
+2018-02-06 09:18:05,180 RUNNING
+2018-02-06 09:18:15,261 RUNNING
+2018-02-06 09:18:25,341 RUNNING
+2018-02-06 09:18:35,416 RUNNING
+2018-02-06 09:18:45,511 RUNNING
+2018-02-06 09:18:55,596 RUNNING
+2018-02-06 09:19:05,677 RUNNING
+2018-02-06 09:19:15,756 RUNNING
+2018-02-06 09:19:25,827 RUNNING
+2018-02-06 09:19:35,903 RUNNING
+2018-02-06 09:19:45,975 RUNNING
+2018-02-06 09:19:56,063 RUNNING
+2018-02-06 09:20:06,192 RUNNING
+2018-02-06 09:20:16,272 RUNNING
+2018-02-06 09:20:26,356 RUNNING
+2018-02-06 09:20:36,437 RUNNING
+2018-02-06 09:20:46,547 RUNNING
+2018-02-06 09:20:56,623 RUNNING
+2018-02-06 09:21:06,708 RUNNING
+2018-02-06 09:21:16,788 RUNNING
+2018-02-06 09:21:26,876 RUNNING
+2018-02-06 09:21:36,946 RUNNING
+2018-02-06 09:21:47,026 RUNNING
+2018-02-06 09:21:57,116 RUNNING
+2018-02-06 09:22:07,204 RUNNING
+2018-02-06 09:22:18,008 RUNNING
+2018-02-06 09:22:28,093 RUNNING
+2018-02-06 09:22:38,178 RUNNING
+2018-02-06 09:22:48,276 RUNNING
+2018-02-06 09:22:58,358 RUNNING
+2018-02-06 09:23:08,468 RUNNING
+2018-02-06 09:23:18,559 RUNNING
+2018-02-06 09:23:28,654 RUNNING
+2018-02-06 09:23:38,740 RUNNING
+2018-02-06 09:23:48,824 RUNNING
+2018-02-06 09:23:58,903 RUNNING
+2018-02-06 09:24:08,983 RUNNING
+2018-02-06 09:24:19,059 RUNNING
+2018-02-06 09:24:29,116 RUNNING
+2018-02-06 09:24:39,195 RUNNING
+2018-02-06 09:24:49,280 RUNNING
+2018-02-06 09:24:59,368 RUNNING
+2018-02-06 09:25:09,447 RUNNING
+2018-02-06 09:25:19,522 RUNNING
+2018-02-06 09:25:29,611 RUNNING
+2018-02-06 09:25:39,814 RUNNING
+2018-02-06 09:25:49,896 RUNNING
+2018-02-06 09:25:59,970 RUNNING
+2018-02-06 09:26:10,046 RUNNING
+2018-02-06 09:26:20,131 RUNNING
+2018-02-06 09:26:30,212 RUNNING
+2018-02-06 09:26:40,306 RUNNING
+2018-02-06 09:26:50,387 RUNNING
+2018-02-06 09:27:00,460 RUNNING
+2018-02-06 09:27:10,542 RUNNING
+2018-02-06 09:27:20,632 RUNNING
+2018-02-06 09:27:30,700 RUNNING
+2018-02-06 09:27:40,932 RUNNING
+2018-02-06 09:27:51,027 RUNNING
+2018-02-06 09:28:01,112 RUNNING
+2018-02-06 09:28:11,187 RUNNING
+2018-02-06 09:28:21,268 RUNNING
+2018-02-06 09:28:31,331 RUNNING
+2018-02-06 09:28:41,407 RUNNING
+2018-02-06 09:28:51,489 RUNNING
+2018-02-06 09:29:01,587 RUNNING
+2018-02-06 09:29:11,675 RUNNING
+2018-02-06 09:29:21,758 SUCCEEDED
+2018-02-06 09:29:31,759 Job Cleanup step
+2018-02-06 09:29:31,843 Completed Glue Job Execution
+real 1133.35
+user 0.79
+sys 0.15
+
+error_exit $? " ${SCRIPT_NAME}=> Job failed  " $LOG_FILE
++ error_exit 0 ' pe_main_wrapper=> Job failed  ' /tmp/pe_main_wrapper.2018-02-06_091038.out
++ ret_val=0
++ process_step=' pe_main_wrapper=> Job failed  '
++ log_filename=/tmp/pe_main_wrapper.2018-02-06_091038.out
++ '[' 0 -ne 0 ']'
+#-- Lookup Loads
+S3_TARGET_FOLDER_PARQUET_BASE=s3://move-dataeng-omniture-${ENV}/homerealtor/product_event/lookup
++ S3_TARGET_FOLDER_PARQUET_BASE=s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup
+DB_NAME=product_event
++ DB_NAME=product_event
+CRAWLER_NAME=ctas_etl_crawler
++ CRAWLER_NAME=ctas_etl_crawler
+time -p python -u $BIN_DIR/rdc_omniture_lookup_CTAS_ETL.py --s3_target_folder_parquet_base ${S3_TARGET_FOLDER_PARQUET_BASE}  --db_name ${DB_NAME} --crawler_name ${CRAWLER_NAME}  --throttle_limit 2 --env ${ENV}
++ python -u /Users/apillai/move-git/business_data/product_event/src/rdc_omniture_lookup_CTAS_ETL.py --s3_target_folder_parquet_base s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup --db_name product_event --crawler_name ctas_etl_crawler --throttle_limit 2 --env dev
+
+===================================== - ======================================
+s3_target_folder_parquet_base                        = s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup
+db_name                                              = product_event
+crawler_name                                         = ctas_etl_crawler
+throttle_limit                                       = 2
+env                                                  = dev
+
+===================================== - ======================================
+===================================== - ======================================
+ athena_ctas_query= 
+    select distinct 
+    col_00 as "mobile_id",
+    col_01 as "manufacturer",
+    col_02 as "device",
+    col_03 as "device_type",
+    col_04 as "operating_system",
+    col_05 as "diagonal_screen_size",
+    col_06 as "screen_height",
+    col_07 as "screen_width",
+    col_08 as "cookie_support",
+    col_09 as "color_depth",
+    col_10 as "mp3_audio_support",
+    col_11 as "aac_audio_support",
+    col_12 as "amr_audio_support",
+    col_13 as "midi_monophonic_audio_support",
+    col_14 as "midi_polyphonic_audio_support",
+    col_15 as "qcelp_audio_support",
+    col_16 as "gif87_image_support",
+    col_17 as "gif89a_image_support",
+    col_18 as "png_image_support",
+    col_19 as "jpg_image_support",
+    col_20 as "3gpp_video_support",
+    col_21 as "mpeg4_video_support",
+    col_22 as "3gpp2_video_support",
+    col_23 as "wmv_video_support",
+    col_24 as "mpeg4_part_2_video_support",
+    col_25 as "stream_mp4_aac_lc_video_support",
+    col_26 as "stream_3gp_h264_level_10b_video_support",
+    col_27 as "stream_3gp_aac_lc_video_support",
+    col_28 as "3gp_aac_lc_video_support",
+    col_29 as "stream_mp4_h264_level_11_video_support",
+    col_30 as "stream_mp4_h264_level_13_video_support",
+    col_31 as "stream_3gp_h264_level_12_video_support",
+    col_32 as "stream_3gp_h264_level_11_video_support",
+    col_33 as "stream_3gp_h264_level_10_video_support",
+    col_34 as "stream_3gp_h264_level_13_video_support",
+    col_35 as "3gp_amr_nb_video_support",
+    col_36 as "3gp_amr_wb_video_support",
+    col_37 as "mp4_h264_level_11_video_support",
+    col_38 as "3gp_h263_video_support",
+    col_39 as "mp4_h264_level_13_video_support",
+    col_40 as "stream_3gp_h263_video_support",
+    col_41 as "stream_3gp_amr_wb_video_support",
+    col_42 as "3gp_h264_level_10b_video_support",
+    col_43 as "mp4_acc_lc_video_support",
+    col_44 as "stream_3gp_amr_nb_video_support",
+    col_45 as "3gp_h264_level_10_video_support",
+    col_46 as "3gp_h264_level_13_video_support",
+    col_47 as "3gp_h264_level_11_video_support",
+    col_48 as "3gp_h264_level_12_video_support",
+    col_49 as "stream_http_live_streaming_video_support"
+    from  move_dl.mobile_attributes_raw 
+     ===================================== - ======================================
+ athena_ctas_query= 
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, referrer_type, referrer_grouping
+    from move_dl.referrer_type_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, referrer_type, referrer_grouping, created_seq
+    from ranked
+    where rnk = 1 
+     
+===================================== - ======================================
+
+===================================== - =========================================================================== - ======================================
+
+ s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/mobile_attributes 
+===================================== - =========================================================================== - ======================================
+
+ s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/referrer_type 
+===================================== - ======================================
+s3_staging_folder_csv=s3_staging_folder_csv=  s3://move-dataeng-temp-dev/glue-etl/athena_csv/referrer_type/4b9422fa-0b63-11e8-90a5-a45e60c7138fs3://move-dataeng-temp-dev/glue-etl/athena_csv/mobile_attributes/4b941773-0b63-11e8-a912-a45e60c7138f
+
+
+
+s3_target_folder_parquet = s3_target_folder_parquet =   s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/mobile_attributess3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/referrer_type
+
+
+
+glue_script_location = glue_script_location =   s3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.pys3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.py
+
+
+
+glue_custom_schema_location = glue_custom_schema_location =   s3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.jsons3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.json
+
+
+
+Starting Athena Query Execution ...Starting Athena Query Execution ...
+
+
+
+AthenaUtil Initialization ..
+Started athena_query_execute_save_s3 ..AthenaUtil Initialization ..
+
+Started athena_query_execute_save_s3 ..athena_ctas_query= 
+ 
+    select distinct 
+    col_00 as "mobile_id",
+    col_01 as "manufacturer",
+    col_02 as "device",
+    col_03 as "device_type",
+    col_04 as "operating_system",
+    col_05 as "diagonal_screen_size",
+    col_06 as "screen_height",
+    col_07 as "screen_width",
+    col_08 as "cookie_support",
+    col_09 as "color_depth",
+    col_10 as "mp3_audio_support",
+    col_11 as "aac_audio_support",
+    col_12 as "amr_audio_support",
+    col_13 as "midi_monophonic_audio_support",
+    col_14 as "midi_polyphonic_audio_support",
+    col_15 as "qcelp_audio_support",
+    col_16 as "gif87_image_support",
+    col_17 as "gif89a_image_support",
+    col_18 as "png_image_support",
+    col_19 as "jpg_image_support",
+    col_20 as "3gpp_video_support",
+    col_21 as "mpeg4_video_support",
+    col_22 as "3gpp2_video_support",
+    col_23 as "wmv_video_support",
+    col_24 as "mpeg4_part_2_video_support",
+    col_25 as "stream_mp4_aac_lc_video_support",
+    col_26 as "stream_3gp_h264_level_10b_video_support",
+    col_27 as "stream_3gp_aac_lc_video_support",
+    col_28 as "3gp_aac_lc_video_support",
+    col_29 as "stream_mp4_h264_level_11_video_support",
+    col_30 as "stream_mp4_h264_level_13_video_support",
+    col_31 as "stream_3gp_h264_level_12_video_support",
+    col_32 as "stream_3gp_h264_level_11_video_support",
+    col_33 as "stream_3gp_h264_level_10_video_support",
+    col_34 as "stream_3gp_h264_level_13_video_support",
+    col_35 as "3gp_amr_nb_video_support",
+    col_36 as "3gp_amr_wb_video_support",
+    col_37 as "mp4_h264_level_11_video_support",
+    col_38 as "3gp_h263_video_support",
+    col_39 as "mp4_h264_level_13_video_support",
+    col_40 as "stream_3gp_h263_video_support",
+    col_41 as "stream_3gp_amr_wb_video_support",
+    col_42 as "3gp_h264_level_10b_video_support",
+    col_43 as "mp4_acc_lc_video_support",
+    col_44 as "stream_3gp_amr_nb_video_support",
+    col_45 as "3gp_h264_level_10_video_support",
+    col_46 as "3gp_h264_level_13_video_support",
+    col_47 as "3gp_h264_level_11_video_support",
+    col_48 as "3gp_h264_level_12_video_support",
+    col_49 as "stream_http_live_streaming_video_support"
+    from  move_dl.mobile_attributes_raw 
+    athena_ctas_query= 
+ s3://move-dataeng-temp-dev/glue-etl/athena_csv/mobile_attributes/4b941773-0b63-11e8-a912-a45e60c7138f
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, referrer_type, referrer_grouping
+    from move_dl.referrer_type_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, referrer_type, referrer_grouping, created_seq
+    from ranked
+    where rnk = 1 
+    
+
+s3://move-dataeng-temp-dev/glue-etl/athena_csv/referrer_type/4b9422fa-0b63-11e8-90a5-a45e60c7138f
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Mobileattributes ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/mobile_attributes/4b941773-0b63-11e8-a912-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/mobile_attributes
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Mobileattributes and 
+ JobId=jr_3f5e1380f408a7d4e5b2defd41827d126993e4cbcafcb951250b088a2f2d0a0c  to Complete processing ...
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Referrertype ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/referrer_type/4b9422fa-0b63-11e8-90a5-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/referrer_type
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Referrertype and 
+ JobId=jr_1ed0450bb25f35d71d2937ba72abe21d25743fa04dc2df556257d93aac710ccd  to Complete processing ...
+Completed Glue Job Execution
+
+Job Cleanup step
+Athena CTAS Done!
+
+===================================== - ======================================
+============== Dropping Table=> product_event.mobile_attributes ==============
+===================================== - ======================================
+drop table product_event.mobile_attributes
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': 'ad4ef249-0b63-11e8-91f1-a1a0ab0c1299', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 17:32:17 GMT', 'x-amzn-requestid': 'ad4ef249-0b63-11e8-91f1-a1a0ab0c1299', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Completed Glue Job Execution
+
+Job Cleanup step
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/mobile_attributes 
+Table is available in DBname: product_event 
+Athena CTAS Done!
+
+===================================== - ======================================
+================ Dropping Table=> product_event.referrer_type ================
+===================================== - ======================================
+drop table product_event.referrer_type
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': 'af041bd8-0b63-11e8-bd2c-7deb1bd28606', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 17:32:19 GMT', 'x-amzn-requestid': 'af041bd8-0b63-11e8-bd2c-7deb1bd28606', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 0 out of 100
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 1 out of 100
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 2 out of 100
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 3 out of 100
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 4 out of 100
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 5 out of 100
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 6 out of 100
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 7 out of 100
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 8 out of 100
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   252.914189 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/mobile_attributes 
+Process Done!
+===================================== - ======================================
+===================================== - ======================================
+ athena_ctas_query= 
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.browser_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+     
+===================================== - ======================================
+===================================== - ======================================
+== s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/browser ===
+===================================== - ======================================
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/browser/e25398d7-0b63-11e8-8169-a45e60c7138f
+
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/browser
+
+glue_script_location =  s3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.py
+
+glue_custom_schema_location =  s3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.json
+
+Starting Athena Query Execution ...
+
+AthenaUtil Initialization ..
+Started athena_query_execute_save_s3 ..
+athena_ctas_query=  
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.browser_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+    
+s3://move-dataeng-temp-dev/glue-etl/athena_csv/browser/e25398d7-0b63-11e8-8169-a45e60c7138f
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/referrer_type 
+Table is available in DBname: product_event 
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   346.821250 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/referrer_type 
+Process Done!
+===================================== - ======================================
+===================================== - ======================================
+ athena_ctas_query= 
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.browser_type_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+     
+===================================== - ======================================
+===================================== - ======================================
+ s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/browser_type 
+===================================== - ======================================
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/browser_type/1a4cbcc5-0b64-11e8-a4a5-a45e60c7138f
+
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/browser_type
+
+glue_script_location =  s3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.py
+
+glue_custom_schema_location =  s3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.json
+
+Starting Athena Query Execution ...
+
+AthenaUtil Initialization ..
+Started athena_query_execute_save_s3 ..
+athena_ctas_query=  
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.browser_type_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+    
+s3://move-dataeng-temp-dev/glue-etl/athena_csv/browser_type/1a4cbcc5-0b64-11e8-a4a5-a45e60c7138f
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Browser ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/browser/e25398d7-0b63-11e8-8169-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/browser
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Browser and 
+ JobId=jr_0451edcc610c4e489a3e791169915499d6953748dde781067d77cbf31491a1c2  to Complete processing ...
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Browsertype ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/browser_type/1a4cbcc5-0b64-11e8-a4a5-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/browser_type
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Browsertype and 
+ JobId=jr_24ced563538b11b49f83c3746ef386f823c7ddb435ef7bce9b9e7e908ec6a068  to Complete processing ...
+Completed Glue Job Execution
+
+Job Cleanup step
+Athena CTAS Done!
+
+===================================== - ======================================
+=================== Dropping Table=> product_event.browser ===================
+===================================== - ======================================
+drop table product_event.browser
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': 'ad244344-0b64-11e8-8bd2-3d698bcbc1bd', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 17:39:26 GMT', 'x-amzn-requestid': 'ad244344-0b64-11e8-8bd2-3d698bcbc1bd', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/browser 
+Table is available in DBname: product_event 
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+Completed Glue Job Execution
+
+Job Cleanup step
+Athena CTAS Done!
+
+===================================== - ======================================
+================ Dropping Table=> product_event.browser_type =================
+===================================== - ======================================
+drop table product_event.browser_type
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': 'd80f5aba-0b64-11e8-8ccb-d949500c7c56', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 17:40:38 GMT', 'x-amzn-requestid': 'd80f5aba-0b64-11e8-8ccb-d949500c7c56', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 0 out of 100
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 1 out of 100
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   428.007431 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/browser 
+Process Done!
+===================================== - ======================================
+===================================== - ======================================
+ athena_ctas_query= 
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.color_depth_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+     
+===================================== - ======================================
+===================================== - ======================================
+ s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/color_depth =
+===================================== - ======================================
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/color_depth/e1706219-0b64-11e8-a073-a45e60c7138f
+
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/color_depth
+
+glue_script_location =  s3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.py
+
+glue_custom_schema_location =  s3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.json
+
+Starting Athena Query Execution ...
+
+AthenaUtil Initialization ..
+Started athena_query_execute_save_s3 ..
+athena_ctas_query=  
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.color_depth_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+    
+s3://move-dataeng-temp-dev/glue-etl/athena_csv/color_depth/e1706219-0b64-11e8-a073-a45e60c7138f
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/browser_type 
+Table is available in DBname: product_event 
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Colordepth ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/color_depth/e1706219-0b64-11e8-a073-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/color_depth
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Colordepth and 
+ JobId=jr_f2938b8fe4c1eab5c692e215f587d2e9bf5b78636f89a855fd44ac9486d9fde5  to Complete processing ...
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   425.448689 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/browser_type 
+Process Done!
+===================================== - ======================================
+===================================== - ======================================
+ athena_ctas_query= 
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.connection_type_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+     
+===================================== - ======================================
+===================================== - ======================================
+ s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/connection_type 
+===================================== - ======================================
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/connection_type/17e313b0-0b65-11e8-bf66-a45e60c7138f
+
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/connection_type
+
+glue_script_location =  s3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.py
+
+glue_custom_schema_location =  s3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.json
+
+Starting Athena Query Execution ...
+
+AthenaUtil Initialization ..
+Started athena_query_execute_save_s3 ..
+athena_ctas_query=  
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.connection_type_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+    
+s3://move-dataeng-temp-dev/glue-etl/athena_csv/connection_type/17e313b0-0b65-11e8-bf66-a45e60c7138f
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Connectiontype ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/connection_type/17e313b0-0b65-11e8-bf66-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/connection_type
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Connectiontype and 
+ JobId=jr_5c48ffd03d0681763134752d24bd4c29d4de78d53659d903b06725608c0c76ce  to Complete processing ...
+Completed Glue Job Execution
+
+Job Cleanup step
+Athena CTAS Done!
+
+===================================== - ======================================
+================= Dropping Table=> product_event.color_depth =================
+===================================== - ======================================
+drop table product_event.color_depth
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': '43c498be-0b65-11e8-812f-d7d40a32ccbd', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 17:43:38 GMT', 'x-amzn-requestid': '43c498be-0b65-11e8-812f-d7d40a32ccbd', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/color_depth 
+Table is available in DBname: product_event 
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   253.243298 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/color_depth 
+Process Done!
+===================================== - ======================================
+===================================== - ======================================
+ athena_ctas_query= 
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.country_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+     
+===================================== - ======================================
+===================================== - ======================================
+== s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/country ===
+===================================== - ======================================
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/country/7862492b-0b65-11e8-8f86-a45e60c7138f
+
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/country
+
+glue_script_location =  s3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.py
+
+glue_custom_schema_location =  s3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.json
+
+Starting Athena Query Execution ...
+
+AthenaUtil Initialization ..
+Started athena_query_execute_save_s3 ..
+athena_ctas_query=  
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.country_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+    
+s3://move-dataeng-temp-dev/glue-etl/athena_csv/country/7862492b-0b65-11e8-8f86-a45e60c7138f
+Completed Glue Job Execution
+
+Job Cleanup step
+Athena CTAS Done!
+
+===================================== - ======================================
+=============== Dropping Table=> product_event.connection_type ===============
+===================================== - ======================================
+drop table product_event.connection_type
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': '7a83cb4b-0b65-11e8-848c-97a136e6f945', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 17:45:10 GMT', 'x-amzn-requestid': '7a83cb4b-0b65-11e8-848c-97a136e6f945', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/connection_type 
+Table is available in DBname: product_event 
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Country ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/country/7862492b-0b65-11e8-8f86-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/country
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Country and 
+ JobId=jr_a12f5cbc146c5ae4815b8b79597c84a34ef74a96fd223224736d6674f687b55d  to Complete processing ...
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   258.773261 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/connection_type 
+Process Done!
+===================================== - ======================================
+===================================== - ======================================
+ athena_ctas_query= 
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.event_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+     
+===================================== - ======================================
+===================================== - ======================================
+=== s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/event ====
+===================================== - ======================================
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/event/b220c5c5-0b65-11e8-9d4f-a45e60c7138f
+
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/event
+
+glue_script_location =  s3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.py
+
+glue_custom_schema_location =  s3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.json
+
+Starting Athena Query Execution ...
+
+AthenaUtil Initialization ..
+Started athena_query_execute_save_s3 ..
+athena_ctas_query=  
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.event_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+    
+s3://move-dataeng-temp-dev/glue-etl/athena_csv/event/b220c5c5-0b65-11e8-9d4f-a45e60c7138f
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Event ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/event/b220c5c5-0b65-11e8-9d4f-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/event
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Event and 
+ JobId=jr_32bf221358a18a9ac5e616482385cf536912afb07902246916b000b7a6c31ea2  to Complete processing ...
+Completed Glue Job Execution
+
+Job Cleanup step
+Athena CTAS Done!
+
+===================================== - ======================================
+=================== Dropping Table=> product_event.country ===================
+===================================== - ======================================
+drop table product_event.country
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': 'd9fbf32b-0b65-11e8-812f-d7d40a32ccbd', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 17:47:50 GMT', 'x-amzn-requestid': 'd9fbf32b-0b65-11e8-812f-d7d40a32ccbd', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/country 
+Table is available in DBname: product_event 
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   251.791073 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/country 
+Process Done!
+===================================== - ======================================
+===================================== - ======================================
+ athena_ctas_query= 
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.javascript_version_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+     
+===================================== - ======================================
+===================================== - ======================================
+ s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/javascript_version 
+===================================== - ======================================
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/javascript_version/0e769007-0b66-11e8-bcc5-a45e60c7138f
+
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/javascript_version
+
+glue_script_location =  s3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.py
+
+glue_custom_schema_location =  s3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.json
+
+Starting Athena Query Execution ...
+
+AthenaUtil Initialization ..
+Started athena_query_execute_save_s3 ..
+athena_ctas_query=  
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.javascript_version_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+    
+s3://move-dataeng-temp-dev/glue-etl/athena_csv/javascript_version/0e769007-0b66-11e8-bcc5-a45e60c7138f
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Javascriptversion ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/javascript_version/0e769007-0b66-11e8-bcc5-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/javascript_version
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Javascriptversion and 
+ JobId=jr_784727fd40c3e7764890e9dbe31d34376fba2b97ba52bbdff07cff27da800e6e  to Complete processing ...
+Completed Glue Job Execution
+
+Job Cleanup step
+Athena CTAS Done!
+
+===================================== - ======================================
+==================== Dropping Table=> product_event.event ====================
+===================================== - ======================================
+drop table product_event.event
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': '13fae6a8-0b66-11e8-89e4-37befa2da53a', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 17:49:27 GMT', 'x-amzn-requestid': '13fae6a8-0b66-11e8-89e4-37befa2da53a', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/event 
+Table is available in DBname: product_event 
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   250.771844 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/event 
+Process Done!
+===================================== - ======================================
+===================================== - ======================================
+ athena_ctas_query= 
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.languages_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+     
+===================================== - ======================================
+===================================== - ======================================
+= s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/languages ==
+===================================== - ======================================
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/languages/479986cf-0b66-11e8-8648-a45e60c7138f
+
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/languages
+
+glue_script_location =  s3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.py
+
+glue_custom_schema_location =  s3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.json
+
+Starting Athena Query Execution ...
+
+AthenaUtil Initialization ..
+Started athena_query_execute_save_s3 ..
+athena_ctas_query=  
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.languages_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+    
+s3://move-dataeng-temp-dev/glue-etl/athena_csv/languages/479986cf-0b66-11e8-8648-a45e60c7138f
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Languages ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/languages/479986cf-0b66-11e8-8648-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/languages
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Languages and 
+ JobId=jr_c08d9b4e0759004193f859356b894110d5c659632660acdfa332605ac5bbd0f6  to Complete processing ...
+Completed Glue Job Execution
+
+Job Cleanup step
+Athena CTAS Done!
+
+===================================== - ======================================
+============= Dropping Table=> product_event.javascript_version ==============
+===================================== - ======================================
+drop table product_event.javascript_version
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': '6fa84bab-0b66-11e8-812f-d7d40a32ccbd', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 17:52:01 GMT', 'x-amzn-requestid': '6fa84bab-0b66-11e8-812f-d7d40a32ccbd', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/javascript_version 
+Table is available in DBname: product_event 
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   251.887747 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/javascript_version 
+Process Done!
+===================================== - ======================================
+===================================== - ======================================
+ athena_ctas_query= 
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.operating_systems_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+     
+===================================== - ======================================
+===================================== - ======================================
+ s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/operating_systems 
+===================================== - ======================================
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/operating_systems/a499a14c-0b66-11e8-b178-a45e60c7138f
+
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/operating_systems
+
+glue_script_location =  s3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.py
+
+glue_custom_schema_location =  s3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.json
+
+Starting Athena Query Execution ...
+
+AthenaUtil Initialization ..
+Started athena_query_execute_save_s3 ..
+athena_ctas_query=  
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.operating_systems_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+    
+s3://move-dataeng-temp-dev/glue-etl/athena_csv/operating_systems/a499a14c-0b66-11e8-b178-a45e60c7138f
+Completed Glue Job Execution
+
+Job Cleanup step
+Athena CTAS Done!
+
+===================================== - ======================================
+================== Dropping Table=> product_event.languages ==================
+===================================== - ======================================
+drop table product_event.languages
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': 'a897cb6b-0b66-11e8-89e4-37befa2da53a', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 17:53:38 GMT', 'x-amzn-requestid': 'a897cb6b-0b66-11e8-89e4-37befa2da53a', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/languages 
+Table is available in DBname: product_event 
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Operatingsystems ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/operating_systems/a499a14c-0b66-11e8-b178-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/operating_systems
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Operatingsystems and 
+ JobId=jr_72d0661832d71f06d9c16d72edd3c91f989d3b3f561a9110ea3308553d84ab55  to Complete processing ...
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   253.387157 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/languages 
+Process Done!
+===================================== - ======================================
+===================================== - ======================================
+ athena_ctas_query= 
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.plugins_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+     
+===================================== - ======================================
+===================================== - ======================================
+== s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/plugins ===
+===================================== - ======================================
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/plugins/dea15f6b-0b66-11e8-bc5d-a45e60c7138f
+
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/plugins
+
+glue_script_location =  s3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.py
+
+glue_custom_schema_location =  s3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.json
+
+Starting Athena Query Execution ...
+
+AthenaUtil Initialization ..
+Started athena_query_execute_save_s3 ..
+athena_ctas_query=  
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.plugins_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+    
+s3://move-dataeng-temp-dev/glue-etl/athena_csv/plugins/dea15f6b-0b66-11e8-bc5d-a45e60c7138f
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Plugins ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/plugins/dea15f6b-0b66-11e8-bc5d-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/plugins
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Plugins and 
+ JobId=jr_242ed753ae297d5f1983a8523e8f6ce8b722364bc9a7a0adbe3ee267eeb8ca89  to Complete processing ...
+Completed Glue Job Execution
+
+Job Cleanup step
+Athena CTAS Done!
+
+===================================== - ======================================
+============== Dropping Table=> product_event.operating_systems ==============
+===================================== - ======================================
+drop table product_event.operating_systems
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': '08108f15-0b67-11e8-8ccb-d949500c7c56', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 17:56:21 GMT', 'x-amzn-requestid': '08108f15-0b67-11e8-8ccb-d949500c7c56', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/operating_systems 
+Table is available in DBname: product_event 
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   260.417614 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/operating_systems 
+Process Done!
+===================================== - ======================================
+===================================== - ======================================
+ athena_ctas_query= 
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.resolution_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+     
+===================================== - ======================================
+===================================== - ======================================
+= s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/resolution =
+===================================== - ======================================
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/resolution/3fd238e1-0b67-11e8-9241-a45e60c7138f
+
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/resolution
+
+glue_script_location =  s3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.py
+
+glue_custom_schema_location =  s3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.json
+
+Starting Athena Query Execution ...
+
+AthenaUtil Initialization ..
+Started athena_query_execute_save_s3 ..
+athena_ctas_query=  
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.resolution_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+    
+s3://move-dataeng-temp-dev/glue-etl/athena_csv/resolution/3fd238e1-0b67-11e8-9241-a45e60c7138f
+Completed Glue Job Execution
+
+Job Cleanup step
+Athena CTAS Done!
+
+===================================== - ======================================
+=================== Dropping Table=> product_event.plugins ===================
+===================================== - ======================================
+drop table product_event.plugins
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': '40ed2418-0b67-11e8-91f1-a1a0ab0c1299', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 17:57:52 GMT', 'x-amzn-requestid': '40ed2418-0b67-11e8-91f1-a1a0ab0c1299', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/plugins 
+Table is available in DBname: product_event 
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Resolution ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/resolution/3fd238e1-0b67-11e8-9241-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/resolution
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Resolution and 
+ JobId=jr_fd8894891418587684151b0e858345eb122532a602b9d3a969ad270f8102830d  to Complete processing ...
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   254.070345 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/plugins 
+Process Done!
+===================================== - ======================================
+===================================== - ======================================
+ athena_ctas_query= 
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.search_engines_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+     
+===================================== - ======================================
+===================================== - ======================================
+ s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/search_engines 
+===================================== - ======================================
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/search_engines/761174fa-0b67-11e8-9424-a45e60c7138f
+
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/search_engines
+
+glue_script_location =  s3://move-dataeng-code-dev/glue-etl/scripts/athena_ctas_csv2parquet.py
+
+glue_custom_schema_location =  s3://move-dataeng-code-dev/glue-etl/scripts/ctas_custom_schema.json
+
+Starting Athena Query Execution ...
+
+AthenaUtil Initialization ..
+Started athena_query_execute_save_s3 ..
+athena_ctas_query=  
+    WITH data as(
+    select distinct    
+     concat(regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[2]
+    ,regexp_split(split(reverse(split(reverse("$PATH") ,'/')[1]), '.')[1] , '-|_')[3]
+            ) as created_seq
+    , id, name
+    from move_dl.search_engines_raw
+    ), ranked as(
+    select *, row_number() over(partition by id order by created_seq desc) as rnk
+    from data
+    )
+    select distinct id, name, created_seq
+    from ranked
+    where rnk = 1
+    
+s3://move-dataeng-temp-dev/glue-etl/athena_csv/search_engines/761174fa-0b67-11e8-9424-a45e60c7138f
+Completed Athena Query Execution
+
+Starting Glue Job Execution ...
+
+Starting glue_etl_execute_csv2parquet process  for Homerealtor.Productevent.Lookup.Searchengines ....
+s3_staging_folder_csv= s3://move-dataeng-temp-dev/glue-etl/athena_csv/search_engines/761174fa-0b67-11e8-9424-a45e60c7138f
+s3_target_folder_parquet =  s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/search_engines
+
+Waiting for JobName = Homerealtor.Productevent.Lookup.Searchengines and 
+ JobId=jr_0cf212b1976e763ce77c0ef17cb4da3dea1e8efdd7630cc5e3bc474c7c996929  to Complete processing ...
+Completed Glue Job Execution
+
+Job Cleanup step
+Athena CTAS Done!
+
+===================================== - ======================================
+================= Dropping Table=> product_event.resolution ==================
+===================================== - ======================================
+drop table product_event.resolution
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': 'a29598f7-0b67-11e8-96bd-b15ced163575', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 18:00:37 GMT', 'x-amzn-requestid': 'a29598f7-0b67-11e8-96bd-b15ced163575', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/resolution 
+Table is available in DBname: product_event 
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+Completed Glue Job Execution
+
+Job Cleanup step
+Athena CTAS Done!
+
+===================================== - ======================================
+=============== Dropping Table=> product_event.search_engines ================
+===================================== - ======================================
+drop table product_event.search_engines
+s3://move-dataeng-temp-dev/athena_ctas/tmp/
+{u'ResultSet': {u'Rows': [], u'ResultSetMetadata': {u'ColumnInfo': []}}, 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': 'd7731358-0b67-11e8-96bd-b15ced163575', 'HTTPHeaders': {'date': 'Tue, 06 Feb 2018 18:02:06 GMT', 'x-amzn-requestid': 'd7731358-0b67-11e8-96bd-b15ced163575', 'content-length': None, 'content-type': 'application/x-amz-json-1.1', 'connection': 'keep-alive'}}}
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 0 out of 100
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 1 out of 100
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 2 out of 100
+Crawler ctas_etl_crawler Busy .. Please wait..
+Attempt 3 out of 100
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   289.826792 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/resolution 
+Process Done!
+===================================== - ======================================
+Crawler ctas_etl_crawler Updated with 
+ S3 Path: s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/search_engines 
+Table is available in DBname: product_event 
+Waiting for Crawler = ctas_etl_crawler   to Complete processing ...
+Finished Running Crawler = ctas_etl_crawler 
+
+===================================== - ======================================
+ Process   took   293.773654 seconds for 
+ target s3://move-dataeng-omniture-dev/homerealtor/product_event/lookup/search_engines 
+Process Done!
+===================================== - ======================================
+All Partitions loaded
+All Partitions loaded
+All Partitions loaded
+All Partitions loaded
+All Partitions loaded
+All Partitions loaded
+All Partitions loaded
+All Partitions loaded
+All Partitions loaded
+All Partitions loaded
+All Partitions loaded
+All Partitions loaded
+All Partitions loaded
+All Partitions loaded
+real 2084.48
+user 27.32
+sys 2.53
+
+
+error_exit $? " ${SCRIPT_NAME}=> Job failed  " $LOG_FILE
++ error_exit 0 ' pe_main_wrapper=> Job failed  ' /tmp/pe_main_wrapper.2018-02-06_091038.out
++ ret_val=0
++ process_step=' pe_main_wrapper=> Job failed  '
++ log_filename=/tmp/pe_main_wrapper.2018-02-06_091038.out
++ '[' 0 -ne 0 ']'
+#-------------------
+

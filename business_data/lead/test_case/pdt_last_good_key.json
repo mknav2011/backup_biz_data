@@ -1,0 +1,32 @@
+{
+  "created": 1520295519254,
+  "key": "leads.edw.pdt.lead_transactional_fact$LastGoodKey",
+  "value": {
+    "destination_partitions": [
+      {
+        "id": "leads.edw.pdt.lead_transactional_fact",
+        "partition": {
+          "day": 10,
+          "month": 1,
+          "year": 2018
+        },
+        "partition_meta": {}
+      }
+    ],
+    "end_runtime": "2018-03-04 02:43:33.562659",
+    "meta_info": {},
+    "source_partitions": [
+      {
+        "id": "leads.edw.rd.default",
+        "partition": {
+          "day": 23,
+          "hour": 10,
+          "month": 1,
+          "year": 2018
+        },
+        "partition_meta": {}
+      }
+    ],
+    "start_runtime": "2018-03-04 02:15:42.467464"
+  }
+}

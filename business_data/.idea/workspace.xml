@@ -1,0 +1,1589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d01fbc77-b1b8-423e-875a-f172310d985e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/reuse/generic_data_refresh.py" afterPath="$PROJECT_DIR$/code/reuse/generic_data_refresh.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/reuse/glue_wrapper.py" afterPath="$PROJECT_DIR$/code/reuse/glue_wrapper.py" />
+    </list>
+    <ignored path="business_data.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="business_data" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="glue_wrapper.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/reuse/glue_wrapper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="236" selection-end-column="2" />
+              <folding>
+                <element signature="e#18#29#0" expanded="true" />
+                <marker date="1520630876000" expanded="true" signature="21263:22110" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cntr_sfdc_contract.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cntr/sql/cntr_sfdc_contract/cntr_sfdc_contract.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generic_wrapper.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/reuse/generic_wrapper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="66" column="10" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="10" />
+              <folding>
+                <element signature="e#86#135#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generic_data_refresh.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/reuse/generic_data_refresh.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+              <folding>
+                <element signature="e#18#44#0" expanded="true" />
+                <marker date="1520573238000" expanded="true" signature="1055:1566" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="1658:2224" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="2690:2934" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="3052:3436" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="3057:3233" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="3438:4116" placeholder="'''...'''" />
+                <marker date="1520573238000" expanded="true" signature="4265:5748" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="5310:5748" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="5847:6104" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="5847:6148" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="6866:7008" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="7764:10523" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="7774:10281" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="7890:7996" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="8318:9178" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="8394:8556" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="8638:8795" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="8874:9178" placeholder="..." />
+                <marker date="1520573238000" expanded="true" signature="10309:10523" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deploy.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lead/deploy/deploy.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lead_generic_data_refresh.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lead/script/lead_generic_data_refresh.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1830">
+              <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leads_bd_create_external_table.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lead/sql/leads_bd_create_external_table.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-240">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leads_bd_drop_external_table.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lead/sql/leads_bd_drop_external_table.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leads_business_dedupe.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lead/sql/leads_business_dedupe.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2835">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lead_generic_wrapper.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lead/script/lead_generic_wrapper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="297" column="22" selection-start-line="297" selection-start-column="21" selection-end-line="297" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/code/reuse/new.txt" />
+        <option value="$PROJECT_DIR$/code/reuse/old.txt" />
+        <option value="$PROJECT_DIR$/omtr/lookuptables/sql/two_column_lookup.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_community_management/bd_community_management_refresh.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_community/bd_community_refresh.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_community_management/athena/community_management.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_community/athena/communities.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_properties/property_dim_dedupe_full_refresh_glue_year2018.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_properties/property_dim_dedupe_full_refresh_glue_year2017.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_properties/property_dim_dedupe_full_refresh_glue_latest.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_properties/property_dim_dedupe_full_refresh.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_newhomes_plan/bd_new_homes_plan_refresh.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_newhomes_plan/athena/newhomes_plan.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_newhomes_sub_division/bd_new_homes_sub_division_refresh.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_builder/athena/builder.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_newhomes_sub_division/athena/newhomes_sub_division.sql" />
+        <option value="$PROJECT_DIR$/lstp-old/code/test.py" />
+        <option value="$PROJECT_DIR$/cntr/sql/sfdc_account.sql" />
+        <option value="$PROJECT_DIR$/cntr/sql/cntr_sfdc_account.sql" />
+        <option value="$PROJECT_DIR$/cntr/sql/cntr_sfdc_product/cntr_sfdc_product.sql" />
+        <option value="$PROJECT_DIR$/cntr/sql/cntr_sfdc_account/athena/accounts.sql" />
+        <option value="$PROJECT_DIR$/cntr/sql/cntr_sfdc_product/athena/products.sql" />
+        <option value="$PROJECT_DIR$/cntr/sql/cntr_sfdc_contract/cntr_sfdc_contract.sql" />
+        <option value="$PROJECT_DIR$/cntr/sql/cntr_sfdc_contract/athena/contracts.sql" />
+        <option value="$PROJECT_DIR$/geo/config/geography_config.json" />
+        <option value="$PROJECT_DIR$/geo/athena/geography.sql" />
+        <option value="$PROJECT_DIR$/geo/sql/usps_geo.sql" />
+        <option value="$PROJECT_DIR$/cntr/sql/cntr_sfdc_account/cntr_sfdc_account.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_latest.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2010.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2011.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2012.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2013.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2014.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2015.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2016.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2017.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2018.sql" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_properties/config/properties_bd_config.json" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_properties/config/bd_properties_year2017_snapshot_config.json" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_properties/config/bd_properties_latest_snapshot_config.json" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_properties/config/bd_properties_year2017_and_older_snapshot_config.json" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_properties/config/bd_properties_year2018_snapshot_config.json" />
+        <option value="$PROJECT_DIR$/cntr/config/bd_products_config.json" />
+        <option value="$PROJECT_DIR$/lstp/config/bd_properties_latest_snapshot_config.json" />
+        <option value="$PROJECT_DIR$/cntr/config/bd_contracts_config.json" />
+        <option value="$PROJECT_DIR$/cntr/config/bd_accounts_config.json" />
+        <option value="$PROJECT_DIR$/lstp/sql/biz_data_builder/bd_builder_refresh.sql" />
+        <option value="$PROJECT_DIR$/code/reuse/glue_data_refresh.py" />
+        <option value="$PROJECT_DIR$/code/reuse/generic_data_refresh.py" />
+        <option value="$PROJECT_DIR$/code/reuse/glue_wrapper.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="838" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omtr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lookuptables" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lead" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lead" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reuse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cntr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cntr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cntr_sfdc_contract" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cntr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EDWBI" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="129" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="154" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="158" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="935" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="140" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="150" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="155" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="931" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings sdk-home="/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7">
+        <option name="mySdkHome" value="/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lstp" />
+      <recent name="$PROJECT_DIR$/cntr/sql/cntr_sfdc_account" />
+      <recent name="$PROJECT_DIR$/lstp-old/code/working" />
+      <recent name="$PROJECT_DIR$/geo/sql" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cntr" />
+      <recent name="$PROJECT_DIR$/lstp/sql/biz_data_properties/config" />
+      <recent name="$PROJECT_DIR$/lstp/sql/biz_data_properties" />
+      <recent name="$PROJECT_DIR$/geo" />
+      <recent name="$PROJECT_DIR$/cntr/sql/cntr_sfdc_contract" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.generic_data_refresh">
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lstp/transformation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="business_data" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lstp/transformation/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lstp-old/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="business_data" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lstp-old/code/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="generic_data_refresh" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/reuse" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="business_data" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/reuse/generic_data_refresh.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="business_data" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="business_data" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="business_data" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="business_data" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="business_data" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="business_data" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="business_data" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.test" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.generic_data_refresh" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.generic_data_refresh" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d01fbc77-b1b8-423e-875a-f172310d985e" name="Default" comment="" />
+      <created>1516127027458</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516127027458</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Created a new Generic' Glue Data Refresh file'">
+      <created>1518119366162</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1518119366162</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Created a new Generic' Glue Data Refresh file'">
+      <created>1518134549062</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1518134549062</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Created a new Generic' Glue Data Refresh file'">
+      <created>1518159190208</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1518159190208</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Created a new Generic' Glue Data Refresh file'">
+      <created>1518163399897</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1518163399897</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Created a new Generic' Glue Data Refresh file'">
+      <created>1518166168071</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1518166168072</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Created a new Generic' Glue Data Refresh file'">
+      <created>1518166891731</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1518166891732</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Created a new Generic' Glue Data Refresh file'">
+      <created>1518171081522</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1518171081523</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Added capability to process text files (other than csv) with separate header location (like in RD)">
+      <created>1518411609478</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1518411609479</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Added capability to process text files (other than csv) with separate header location (like in RD)">
+      <created>1518419854826</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1518419854826</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Added capability to process text files (other than csv) with separate header location (like in RD)">
+      <created>1518420870541</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1518420870541</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Added capability to process text files (other than csv) with separate header location (like in RD)">
+      <created>1518508527269</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1518508527269</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Added capability to process text files (other than csv) with separate header location (like in RD)">
+      <created>1518513331938</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1518513331938</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Fixed ListingDim Latest query issue">
+      <created>1518515343446</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1518515343446</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Fixed ListingDim Latest query issue">
+      <created>1518647061838</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1518647061838</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Added Block Size">
+      <created>1518723351474</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1518723351478</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Added Block Size">
+      <created>1518734640370</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1518734640370</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Added Block Size">
+      <created>1518735729314</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1518735729314</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Added Block Size">
+      <created>1518736640712</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1518736640712</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Added Block Size">
+      <created>1518737950977</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1518737950977</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Added Block Size">
+      <created>1518740510714</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1518740510716</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Added Block Size">
+      <created>1518743606687</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1518743606690</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Added Block Size">
+      <created>1518802513116</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1518802513118</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Added Block Size">
+      <created>1518804059837</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1518804059837</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Fixed text file load">
+      <created>1518804431793</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1518804431793</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Fixed text file load">
+      <created>1518804844297</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1518804844297</updated>
+    </task>
+    <task id="LOCAL-00074" summary="NewHomes Plan SQL">
+      <created>1518808386742</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1518808386743</updated>
+    </task>
+    <task id="LOCAL-00075" summary="NewHomes Plan SQL">
+      <created>1518810914384</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1518810914384</updated>
+    </task>
+    <task id="LOCAL-00076" summary="NewHomes Plan SQL">
+      <created>1518824502164</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1518824502164</updated>
+    </task>
+    <task id="LOCAL-00077" summary="NewHomes Plan SQL">
+      <created>1518824553267</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1518824553267</updated>
+    </task>
+    <task id="LOCAL-00078" summary="DATA-3365">
+      <created>1519854372934</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1519854372935</updated>
+    </task>
+    <task id="LOCAL-00079" summary="DATA-3365">
+      <created>1519856279994</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1519856279995</updated>
+    </task>
+    <task id="LOCAL-00080" summary="DATA-3365">
+      <created>1519859603018</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1519859603018</updated>
+    </task>
+    <task id="LOCAL-00081" summary="DATA-3365">
+      <created>1519866055377</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1519866055377</updated>
+    </task>
+    <task id="LOCAL-00082" summary="DATA-3365">
+      <created>1519867589653</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1519867589653</updated>
+    </task>
+    <task id="LOCAL-00083" summary="DATA-3365">
+      <created>1519868261053</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1519868261053</updated>
+    </task>
+    <task id="LOCAL-00084" summary="DATA-3365">
+      <created>1519869889027</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1519869889027</updated>
+    </task>
+    <task id="LOCAL-00085" summary="DATA-3365">
+      <created>1519871084869</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1519871084869</updated>
+    </task>
+    <task id="LOCAL-00086" summary="DATA-3365">
+      <created>1519871686496</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1519871686496</updated>
+    </task>
+    <task id="LOCAL-00087" summary="DATA-3365">
+      <created>1519873600292</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1519873600292</updated>
+    </task>
+    <task id="LOCAL-00088" summary="DATA-3365">
+      <created>1519874032187</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1519874032187</updated>
+    </task>
+    <task id="LOCAL-00089" summary="DATA-3365">
+      <created>1519935434946</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1519935434946</updated>
+    </task>
+    <task id="LOCAL-00090" summary="DATA-3365">
+      <created>1520011809720</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1520011809721</updated>
+    </task>
+    <task id="LOCAL-00091" summary="DATA-3365">
+      <created>1520021026676</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1520021026676</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Adding more attributes for Listings">
+      <created>1520151169010</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1520151169010</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Adding more attributes for Listings">
+      <created>1520153136357</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1520153136358</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Adding config files for BD-Properties">
+      <created>1520271527413</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1520271527413</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Adding config files for BD-Properties">
+      <created>1520274156309</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1520274156310</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Adding config files for BD-(Contracts, Accounts and Products)">
+      <created>1520320042247</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1520320042250</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Adding config files for BD-(Contracts, Accounts and Products)">
+      <created>1520320978055</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1520320978056</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="838" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24128686" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32841823" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding Dedupe SQLs for Listing and Property" />
+    <MESSAGE value="Working version for the PropertyDim Full Refresh" />
+    <MESSAGE value="Adding query for Geo_Data" />
+    <MESSAGE value="Adding clc" />
+    <MESSAGE value="Added 'udbListingId'" />
+    <MESSAGE value="Organized files into a different directories." />
+    <MESSAGE value="Created a new Generic' Glue Data Refresh file'" />
+    <MESSAGE value="Added capability to process text files (other than csv) with separate header location (like in RD)" />
+    <MESSAGE value="Fixed ListingDim Latest query issue" />
+    <MESSAGE value="Added Block Size" />
+    <MESSAGE value="Fixed text file load" />
+    <MESSAGE value="NewHomes Plan SQL" />
+    <MESSAGE value="DATA-3365" />
+    <MESSAGE value="Adding more attributes for Listings" />
+    <MESSAGE value="Adding config files for BD-Properties" />
+    <MESSAGE value="Adding config files for BD-(Contracts, Accounts and Products)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding config files for BD-(Contracts, Accounts and Products)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/code/reuse/glue_wrapper.py</url>
+          <line>1</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_newhomes_sub_division/athena/newhomes_sub_division.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="154" column="39" selection-start-line="154" selection-start-column="39" selection-end-line="154" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp-old/listingdim/listing_Data_refresh_joins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp-old/code/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="146" column="23" selection-start-line="146" selection-start-column="23" selection-end-line="146" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntr/sql/cntr_sfdc_product/athena/products.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="31" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntr/sql/cntr_sfdc_account/athena/accounts.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntr/sql/cntr_sfdc_contract/athena/contracts.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="127" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geo/athena/geography.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="31" column="57" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2011.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="232" column="40" selection-start-line="232" selection-start-column="40" selection-end-line="232" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2012.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="232" column="40" selection-start-line="232" selection-start-column="40" selection-end-line="232" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2013.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="232" column="40" selection-start-line="232" selection-start-column="40" selection-end-line="232" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2014.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="232" column="40" selection-start-line="232" selection-start-column="40" selection-end-line="232" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2015.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="232" column="40" selection-start-line="232" selection-start-column="40" selection-end-line="232" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2016.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="232" column="40" selection-start-line="232" selection-start-column="40" selection-end-line="232" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2017.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="232" column="40" selection-start-line="232" selection-start-column="40" selection-end-line="232" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2018.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3480">
+          <caret line="232" column="40" selection-start-line="232" selection-start-column="40" selection-end-line="232" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geo/config/geography_config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="76" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_properties/property_dim_dedupe_full_refresh_glue_year2017.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="62" column="26" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_properties/property_dim_dedupe_full_refresh_glue_year2018.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_properties/athena/properties_history_ddl.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="53" column="87" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_properties/athena/properties_latest_ddl.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_properties/property_dim_dedupe_full_refresh_glue_latest.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_year2010.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="177" column="44" selection-start-line="177" selection-start-column="44" selection-end-line="177" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cust/sql/customer_hierarchy_snapshot.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cust/sql/customer_map_snapshot.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cust/sql/customer_mlsset.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cust/sql/customer_party.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cust/sql/profile_api_snapshot.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geo/sql/usps_geo.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntr/sql/cntr_sfdc_product/cntr_sfdc_product.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntr/sql/cntr_sfdc_account/cntr_sfdc_account.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="61" column="40" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/config/bd_properties_year2017_and_older_snapshot_config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <marker date="1520288339000" expanded="true" signature="112:1030" placeholder="{&quot;job_name&quot;: &quot;properties_latest_snapshot&quot;...}" />
+            <marker date="1520288339000" expanded="true" signature="642:1002" placeholder="[...]" />
+            <marker date="1520288339000" expanded="true" signature="648:998" placeholder="{&quot;app_id&quot;: &quot;lstp.edw.pdt.property_dim&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/config/bd_properties_year2018_snapshot_config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="66" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="66" />
+          <folding>
+            <marker date="1520288449000" expanded="true" signature="102:1010" placeholder="{&quot;job_name&quot;: &quot;properties_latest_snapshot&quot;...}" />
+            <marker date="1520288449000" expanded="true" signature="622:982" placeholder="[...]" />
+            <marker date="1520288449000" expanded="true" signature="628:978" placeholder="{&quot;app_id&quot;: &quot;lstp.edw.pdt.property_dim&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_newhomes_plan/bd_new_homes_plan_refresh.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="31" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/config/bd_properties_latest_snapshot_config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="57" />
+          <folding>
+            <marker date="1520320480000" expanded="true" signature="100:1384" placeholder="{&quot;job_name&quot;: &quot;geography_snapshot&quot;...}" />
+            <marker date="1520320480000" expanded="true" signature="612:1356" placeholder="[...]" />
+            <marker date="1520320480000" expanded="true" signature="618:968" placeholder="{&quot;app_id&quot;: &quot;geo.xgeo.pdt.geo_postal_code&quot;...}" />
+            <marker date="1520320480000" expanded="true" signature="974:1352" placeholder="{&quot;app_id&quot;: &quot;geo.xgeo.pdt.geo_neighborhood&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntr/config/bd_accounts_config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="60" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntr/config/bd_products_config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" selection-start-line="12" selection-start-column="2" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntr/config/bd_contracts_config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_listings/listing_dim_dedupe_full_refresh_glue_latest.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="175" column="34" selection-start-line="175" selection-start-column="23" selection-end-line="175" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_builder/bd_builder_refresh.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstp/sql/biz_data_community/bd_community_refresh.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-930">
+          <caret line="51" column="36" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/reuse/glue_data_refresh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#18#44#0" expanded="true" />
+            <marker date="1520380955000" expanded="true" signature="835:1011" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="1852:2530" placeholder="'''...'''" />
+            <marker date="1520380955000" expanded="true" signature="2679:3718" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="2679:4162" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="3724:4162" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="4261:4518" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="4814:4919" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="5432:7797" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="5442:7555" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="5558:5964" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="5603:5964" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="6286:7146" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="6362:6524" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="6606:6763" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="6842:7146" placeholder="..." />
+            <marker date="1520380955000" expanded="true" signature="7583:7797" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/reuse/generic_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="66" column="10" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="10" />
+          <folding>
+            <element signature="e#86#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lead/deploy/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lead/script/lead_generic_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="297" column="22" selection-start-line="297" selection-start-column="21" selection-end-line="297" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lead/script/lead_generic_data_refresh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1830">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lead/sql/leads_bd_create_external_table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lead/sql/leads_bd_drop_external_table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lead/sql/leads_business_dedupe.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2835">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/reuse/generic_data_refresh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+          <folding>
+            <element signature="e#18#44#0" expanded="true" />
+            <marker date="1520573238000" expanded="true" signature="1055:1566" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="1658:2224" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="2690:2934" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="3052:3436" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="3057:3233" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="3438:4116" placeholder="'''...'''" />
+            <marker date="1520573238000" expanded="true" signature="4265:5748" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="5310:5748" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="5847:6104" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="5847:6148" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="6866:7008" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="7764:10523" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="7774:10281" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="7890:7996" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="8318:9178" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="8394:8556" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="8638:8795" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="8874:9178" placeholder="..." />
+            <marker date="1520573238000" expanded="true" signature="10309:10523" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cntr/sql/cntr_sfdc_contract/cntr_sfdc_contract.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/reuse/glue_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="236" selection-end-column="2" />
+          <folding>
+            <element signature="e#18#29#0" expanded="true" />
+            <marker date="1520630876000" expanded="true" signature="21263:22110" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

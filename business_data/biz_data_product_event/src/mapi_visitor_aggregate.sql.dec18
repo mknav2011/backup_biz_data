@@ -1,0 +1,14 @@
+select   cast (concat(year,'-', month,'-', day) as date)    as date_mst
+		,a.params__querystring__visitor visitor_id
+		,a.params__querystring__session visit_id
+		,params__querystring__src source_application_name
+		,params__querystring__chnl property_status_detail
+		,params__querystring__page page_type_group
+		,params__querystring__pgvar page_type
+		,SUM(CASE WHEN params__querystring__ptnid = '70' THEN 1 ELSE 0 END) as pv_count
+  from cnpd_mapi_pdt.mapi a
+WHERE 1 = 1
+AND year = '{year}'  
+AND month =  '{month}'
+AND day =  '{day}'
+GROUP BY 1,2,3, 4, 5, 6, 7

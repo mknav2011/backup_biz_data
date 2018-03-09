@@ -1,0 +1,34 @@
+#!/bin/bash
+BIN_DIR=/tmp
+
+
+#-- Lookup Loads
+python rdc_omniture_mobile_attributes_lookup_load_wrapper.py --s3_location_tgz  s3://move-dataeng-dropbox-prod/adobe/omniture/mobilelookup --s3_location_parquet_file s3://move-dataeng-temp-dev/glue-etl/omniture/lookups_raw/mobile_attributes/ --lookup_filename mobile_attributes.tsv --glue_script_location s3://move-dataeng-code-dev/glue-etl/utils/glueetl_extract_lookup_from_tarball.py   --glue_dpu_instance_count 100
+
+
+python rdc_omniture_lookup_CTAS_ETL.py
+
+
+#---- RDC ---
+
+time -p python -u pe_ctas_wrapper.py --sql_file  product_event_rdc_biz_data.sql --source_table cnpd_omtr_pdt.hit_data --target_table biz_data.product_event_rdc_biz_data  --input_date 2017-11-02 --days_offset 30 --number_of_days2process 60 --throttle_limit 4   --s3_target_folder_parquet_base   s3://move-dataeng-temp-dev/glue-etl/parquet_data/product_event/product_event_rdc_biz_data   --env dev > /tmp/rdc_biz_data.out.nov 2>&1
+
+
+
+time -p python -u pe_ctas_wrapper.py --sql_file product_event_web_summary.sql --source_table biz_data.product_event_rdc_biz_data --target_table biz_data.product_event_web_summary --s3_target_folder_parquet_base   s3://move-dataeng-temp-dev/glue-etl/parquet_data/product_event/product_event_web_summary  --input_date 2017-11-01 --env dev
+
+
+time -p python -u pe_ctas_wrapper.py --sql_file product_event_web_visit_summary.sql --source_table biz_data.product_event_rdc_biz_data --target_table biz_data.product_event_web_visit_summary --s3_target_folder_parquet_base   s3://move-dataeng-temp-dev/glue-etl/parquet_data/product_event/product_event_web_visit_summary  --input_date 2017-11-01 --env dev
+
+
+
+#--- MAPI
+time -p python -u pe_ctas_wrapper.py --sql_file  product_event_mapi_biz_data.sql --source_table cnpd_mapi_pdt.mapi --target_table biz_data.product_event_mapi_biz_data --input_date 2017-12-03 --days_offset 62 --number_of_days2process 70 --throttle_limit 2 --s3_target_folder_parquet_base   s3://move-dataeng-temp-dev/glue-etl/parquet_data/product_event/product_event_mapi_biz_data   --env dev > /tmp/mapi_biz_data.out.dec 2>&1
+
+-- incre
+time -p python -u pe_ctas_wrapper.py --sql_file product_event_mobile_app_summary.sql --source_table biz_data.product_event_mapi_biz_data --target_table biz_data.product_event_mobile_app_summary --s3_target_folder_parquet_base   s3://move-dataeng-temp-dev/glue-etl/parquet_data/product_event/product_event_mobile_app_summary   --throttle_limit 1  --number_of_days2process 30 --env dev > /tmp/product_event_mobile_app_summary_out 2>&1
+
+time -p python -u pe_ctas_wrapper.py --sql_file product_event_mobile_app_visit_summary.sql --source_table biz_data.product_event_mapi_biz_data --target_table biz_data.product_event_mobile_app_visit_summary --s3_target_folder_parquet_base   s3://move-dataeng-temp-dev/glue-etl/parquet_data/product_event/product_event_mobile_app_visit_summary   --throttle_limit 1  --number_of_days2process 31 --env dev > /tmp/product_event_mobile_app_visit_summary_out 2>&1
+
+
+time -p python -u pe_ctas_wrapper.py --sql_file product_event_mobile_app_visit_summary.sql --source_table biz_data.product_event_mapi_biz_data --target_table biz_data.product_event_mobile_app_visit_summary --s3_target_folder_parquet_base   s3://move-dataeng-temp-dev/glue-etl/parquet_data/product_event/product_event_mobile_app_visit_summary   --throttle_limit 1  --number_of_days2process 31 --env dev > /tmp/product_event_mobile_app_visit_summary_out 2>&1

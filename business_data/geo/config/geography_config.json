@@ -1,0 +1,94 @@
+{
+  "job_name": "geography_snapshot",
+  "script_path": "s3://move-dataeng-code-$env/business-data/generic_data_refresh.py",
+  "sql_path": "s3://move-dataeng-code-$env/business-data/geo/sql/usps_geo.sql",
+  "s3_target_path": "s3://move-dataeng-geo-$env/xgeo/business-data/geography",
+  "target_partition_by_column": "None",
+  "is_snapshot": "n",
+  "glue_dpu_instance_count": 1,
+  "block_size_MB": "\\\"\\\"",
+  "source": [
+    {
+      "app_id": "geo.xgeo.pdt.geo_postal_code",
+      "is_partitioned": false,
+      "partition_by": [],
+      "get_all_completed_partitions": "",
+      "s3_source_path": "s3://move-dataeng-geo-prod/xgeo/processed-data-xact/geo_postal_code",
+      "source_file_type_parquet_or_text": "parquet",
+      "temp_table_name": "geo_xgeo_pdt__geo_postal_code"
+    },
+    {
+      "app_id": "geo.xgeo.pdt.geo_neighborhood",
+      "is_partitioned": false,
+      "partition_by": [],
+      "get_all_completed_partitions": "",
+      "s3_source_path": "s3://move-dataeng-geo-prod/xgeo/processed-data-xact/geo_neighborhood",
+      "source_file_type_parquet_or_text": "parquet",
+      "temp_table_name": "geo_xgeo_pdt__geo_neighborhood"
+    },
+    {
+      "app_id": "geo.xgeo.pdt.geo_county",
+      "is_partitioned": false,
+      "partition_by": [],
+      "get_all_completed_partitions": "",
+      "s3_source_path": "s3://move-dataeng-geo-prod/xgeo/processed-data-xact/geo_county",
+      "source_file_type_parquet_or_text": "parquet",
+      "temp_table_name": "geo_xgeo_pdt__geo_county"
+    },
+    {
+      "app_id": "geo.xgeo.pdt.geo_msa_minor",
+      "is_partitioned": false,
+      "partition_by": [],
+      "get_all_completed_partitions": "",
+      "s3_source_path": "s3://move-dataeng-geo-prod/xgeo/processed-data-xact/geo_msa_minor",
+      "source_file_type_parquet_or_text": "parquet",
+      "temp_table_name": "geo_xgeo_pdt__geo_msa_minor"
+    },
+    {
+      "app_id": "geo.xgeo.pdt.geo_state",
+      "is_partitioned": false,
+      "partition_by": [],
+      "get_all_completed_partitions": "",
+      "s3_source_path": "s3://move-dataeng-geo-prod/xgeo/processed-data-xact/geo_state",
+      "source_file_type_parquet_or_text": "parquet",
+      "temp_table_name": "geo_xgeo_pdt__geo_state"
+    },
+    {
+      "app_id": "geo.xgeo.pdt.geo_subregion",
+      "is_partitioned": false,
+      "partition_by": [],
+      "get_all_completed_partitions": "",
+      "s3_source_path": "s3://move-dataeng-geo-prod/xgeo/processed-data-xact/geo_subregion",
+      "source_file_type_parquet_or_text": "parquet",
+      "temp_table_name": "geo_xgeo_pdt__geo_subregion"
+    },
+    {
+      "app_id": "geo.xgeo.pdt.geo_region",
+      "is_partitioned": false,
+      "partition_by": [],
+      "get_all_completed_partitions": "",
+      "s3_source_path": "s3://move-dataeng-geo-prod/xgeo/processed-data-xact/geo_region",
+      "source_file_type_parquet_or_text": "parquet",
+      "temp_table_name": "geo_xgeo_pdt__geo_region"
+    },
+    {
+      "app_id": "geo.xgeo.pdt.geo_country",
+      "is_partitioned": false,
+      "partition_by": [],
+      "get_all_completed_partitions": "",
+      "s3_source_path": "s3://move-dataeng-geo-prod/xgeo/processed-data-xact/geo_country",
+      "source_file_type_parquet_or_text": "parquet",
+      "temp_table_name": "geo_xgeo_pdt__geo_country"
+    },
+    {
+      "app_id": "geo.xgeo.pdt.geo_county_type",
+      "is_partitioned": false,
+      "partition_by": [],
+      "get_all_completed_partitions": "",
+      "s3_source_path": "s3://move-dataeng-geo-prod/xgeo/processed-data-xact/geo_county_type",
+      "source_file_type_parquet_or_text": "parquet",
+      "temp_table_name": "geo_xgeo_pdt__geo_county_type"
+    }
+  ],
+  "lock_period_hours": 4
+}

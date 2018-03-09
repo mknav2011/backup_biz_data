@@ -1,0 +1,43 @@
+"key": "configuration",
+"namespace": "application.cntr.contract.bd.contracts_snapshot",
+"value":
+{
+  "job_name": "bd_contracts_snapshot",
+  "script_path": "s3://move-dataeng-code-$env/business-data/generic_data_refresh.py",
+  "sql_path": "s3://move-dataeng-code-$env/business-data/cntr/sql/cntr_sfdc_contract/sql/cntr_sfdc_contract.sql",
+  "s3_target_path": "s3://move-dataeng-cntr-$env/contracts/business-data/contracts",
+  "target_partition_by_column": "None",
+  "is_snapshot": "n",
+  "glue_dpu_instance_count": 10,
+  "block_size_MB": "\\\"\\\"",
+  "source": [
+    {
+      "app_id": "cntr.contract.pdt.es_dm_sfdc_asset_vw",
+      "is_partitioned": false,
+      "partition_by": [],
+      "get_all_completed_partitions": "",
+      "s3_source_path": "s3://move-dataeng-cntr-$env/contracts/processed-data-xact/es_dm_sfdc_asset_vw",
+      "source_file_type_parquet_or_text": "parquet",
+      "temp_table_name": "cntr_contract_pdt__es_dm_sfdc_asset_vw"
+    },
+    {
+      "app_id": "cntr.contract.bd.accounts_snapshot",
+      "is_partitioned": false,
+      "partition_by": [],
+      "get_all_completed_partitions": "",
+      "s3_source_path": "s3://move-dataeng-cntr-$env/contracts/business-data/accounts",
+      "source_file_type_parquet_or_text": "parquet",
+      "temp_table_name": "cntr_sfdc_accounts"
+    },
+    {
+      "app_id": "cntr.contract.bd.products_snapshot",
+      "is_partitioned": false,
+      "partition_by": [],
+      "get_all_completed_partitions": "",
+      "s3_source_path": "s3://move-dataeng-cntr-$env/contracts/business-data/products",
+      "source_file_type_parquet_or_text": "parquet",
+      "temp_table_name": "cntr_sfdc_products"
+    }
+  ],
+  "lock_period_hours": 1
+}
